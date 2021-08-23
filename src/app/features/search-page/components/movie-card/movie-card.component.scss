@@ -1,0 +1,52 @@
+.card-class {
+    margin-left: 5%; 
+    margin-top: 3%; 
+    margin-right: 5%;
+
+    .flipped:hover{
+        opacity: 1;
+    }
+    .not-flipped:hover{
+        opacity: 0.6;
+    }
+
+    :hover{
+        cursor: pointer;
+    }
+
+    .rating {
+        padding-top: 25% !important;
+        padding-left: 25% !important;
+        font-weight: bold;
+    }
+}
+
+
+.detail-box {
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #ccbeb394;    
+    margin-bottom: 4%;
+    box-shadow: 1px 1px 4px #ada7a2;
+
+    .title {
+        font-size: 16px !important;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .detail {
+        font-weight: 500;
+
+        span {
+            font-weight: 100 !important;
+        }
+    }
+
+    mat-divider {
+        position: inherit !important
+    }
+}
+
+
+

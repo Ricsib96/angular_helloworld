@@ -1,0 +1,25 @@
+.search-bar-loaded {
+    font-size: large;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+
+    -moz-transition: all 0.5s ease .2s;
+    -o-transition: all 0.5s ease .2s;
+    -webkit-transition: all 0.5s ease .2s;
+    transition: all 0.5s ease .2s;
+}
+.search-bar-init {
+    font-size: large;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15%;
+
+    -moz-transition: all 0.5s ease .2s;
+    -o-transition: all 0.5s ease .2s;
+    -webkit-transition: all 0.5s ease .2s;
+    transition: all 0.5s ease .2s;
+}
+.form-field {
+    width: 85%;
+}

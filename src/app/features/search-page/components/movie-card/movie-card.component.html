@@ -1,0 +1,44 @@
+<div class="card-class">
+    <mat-card (click)="flipCard()" [ngClass]="{ 'not-flipped':   !isFlipped(),
+                                                'flipped':        isFlipped()}">
+      <mat-card-header>
+        <div mat-card-avatar [style.background-color]="this.getColorForRating()"><p class="rating">{{this.movie.imdbRating}}</p></div>
+        <mat-card-title>{{this.movie.Title}}</mat-card-title>
+        <mat-card-subtitle>({{this.movie.Year}})</mat-card-subtitle>
+      </mat-card-header>
+
+      <div *ngIf="!isFlipped()">
+        <img mat-card-image *ngIf="hasPoster()" src={{this.movie.Poster}}>
+        <mat-card-content>
+          <p>{{this.movie.Plot}}</p>
+        </mat-card-content>
+      </div>
+
+      <div *ngIf="isFlipped()">
+        <mat-card-content>
+          <div class="detail-box">
+            <p class="title">Creators</p>
+            <p class="detail">Director: <span>{{this.movie.Director}}</span></p>
+            <p class="detail">Writer: <span>{{this.movie.Writer}}</span></p>
+            <p class="detail">Actors: <span>{{this.movie.Actors}}</span></p>
+          </div>
+  
+          <div class="detail-box">
+            <p class="title">Ratings</p>
+            <p class="detail" *ngFor="let rating of this.movie.Ratings">{{rating.Source}} <span>{{rating.Value}}</span></p>
+            <p class="detail">Metascore: <span>{{this.movie.Metascore}}</span></p>
+            <p class="detail">imdbRating: <span>{{this.movie.imdbRating}}</span></p>
+          </div>
+  
+          <div class="detail-box">
+            <p class="title">Details</p>
+            <p class="detail">Genre: <span>{{this.movie.Genre}}</span></p>
+            <p class="detail">Country: <span>{{this.movie.Country}}</span></p>
+            <p class="detail">Language: <span>{{this.movie.Language}}</span></p>
+            <p class="detail">Release date: <span>{{this.movie.Released}}</span></p>
+            <p class="detail">Runtime: <span>{{this.movie.Runtime}}</span></p>
+          </div>
+        </mat-card-content>
+      </div>
+    </mat-card>
+</div>

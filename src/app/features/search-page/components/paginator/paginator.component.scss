@@ -1,0 +1,26 @@
+.paginator-base {
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+
+    .input{
+        width: 10%;
+        vertical-align: inherit;
+        border: revert;
+    }
+}
+
+mat-icon {
+    /*font-size: 55px;*/
+    color: #8d6e63;
+    cursor: pointer;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+     user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+

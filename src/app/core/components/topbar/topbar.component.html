@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span class="menu" *ngFor="let menu of getNavbarItems()" title={{menu.name}}> 
+            <mat-icon>{{menu.icon}}</mat-icon>
+        </span>
+        <!--<button mat-flat-button *ngFor="let menu of getNavbarItems()">
+            <mat-icon>{{menu.icon}}</mat-icon>
+            {{menu.name}}
+        </button> -->
+        
+        
+    </mat-toolbar-row>
+</mat-toolbar>
+

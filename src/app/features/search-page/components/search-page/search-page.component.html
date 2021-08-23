@@ -1,0 +1,11 @@
+<app-search-bar (searchEvent)="getMoviesByTitle($event)" [moviesLoaded]="this.moviesLoaded"></app-search-bar>
+<app-paginator (paginateEvent)="getMoviesFromOtherPage($event)"></app-paginator>
+<div fxLayout="row wrap" grid>
+    <div fxFlex="25%" *ngFor="let item of this.detailedMovies">
+        <app-movie-card [movie]="item"></app-movie-card>
+    </div>
+</div>
+
+
+
+

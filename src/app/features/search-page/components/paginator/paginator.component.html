@@ -1,0 +1,12 @@
+<div class="paginator-base" [style.display]="totalResults == 0 ? 'none' : 'block'">
+    <button mat-icon-button color="primary" (click)="prevPage()">
+        <mat-icon>arrow_left</mat-icon>
+    </button>
+    <!-- <span>{{pageCurrent}}</span> -->
+    <input matInput class="input" [(ngModel)]="pageCurrent" (keyup.enter)="choosePage()">
+    <span> /</span>
+    <span>{{pageAll}}</span>
+    <button mat-icon-button color="primary" (click)="nextPage()">
+        <mat-icon>arrow_right</mat-icon>
+    </button>
+</div>
